@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DeviceMotionData" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ox5-9b-n89">
+                                <rect key="frame" x="139.5" y="318" width="95" height="30"/>
+                                <state key="normal" title="DeviceMotion"/>
+                                <connections>
+                                    <action selector="getDeviceMotion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FVK-C3-2KL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fH5-m0-Jeq">
+                                <rect key="frame" x="171.5" y="400" width="31" height="30"/>
+                                <state key="normal" title="stop"/>
+                                <connections>
+                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CHK-1k-ZAH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nW9-Eo-Nee">
+                                <rect key="frame" x="154.5" y="265" width="65" height="30"/>
+                                <state key="normal" title="GyroData"/>
+                                <connections>
+                                    <action selector="startGyroData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JXC-MJ-e3M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeB-IN-xCH">
+                                <rect key="frame" x="133" y="215" width="108" height="30"/>
+                                <state key="normal" title="Accelerometers"/>
+                                <connections>
+                                    <action selector="getAccelerometers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Ho-6g-0Oi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQ8-Eg-jf0">
+                                <rect key="frame" x="136.5" y="165" width="101" height="30"/>
+                                <state key="normal" title="Magnetometer"/>
+                                <connections>
+                                    <action selector="getMagnetometer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bDu-h7-Zzr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cwp-Nm-GaU">
+                                <rect key="frame" x="160" y="127" width="54" height="30"/>
+                                <state key="normal" title="Altitude"/>
+                                <connections>
+                                    <action selector="getAltitude:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lTG-dw-pnR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89973958333333337" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fH5-m0-Jeq" firstAttribute="top" secondItem="ox5-9b-n89" secondAttribute="bottom" constant="52" id="HTZ-Yw-nN1"/>
+                            <constraint firstItem="fH5-m0-Jeq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hze-UR-A7E"/>
+                            <constraint firstItem="ox5-9b-n89" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IiO-KK-lJk"/>
+                            <constraint firstItem="ox5-9b-n89" firstAttribute="top" secondItem="nW9-Eo-Nee" secondAttribute="bottom" constant="23" id="Ioq-qh-tDH"/>
+                            <constraint firstItem="zeB-IN-xCH" firstAttribute="top" secondItem="dQ8-Eg-jf0" secondAttribute="bottom" constant="20" id="MQY-bo-5b5"/>
+                            <constraint firstItem="ox5-9b-n89" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NiD-8e-VY9"/>
+                            <constraint firstItem="dQ8-Eg-jf0" firstAttribute="top" secondItem="Cwp-Nm-GaU" secondAttribute="bottom" constant="8" id="SWy-vJ-Oz8"/>
+                            <constraint firstItem="nW9-Eo-Nee" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z7p-5N-WY7"/>
+                            <constraint firstItem="Cwp-Nm-GaU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ayN-oK-EOo"/>
+                            <constraint firstItem="dQ8-Eg-jf0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bd6-on-HRb"/>
+                            <constraint firstItem="nW9-Eo-Nee" firstAttribute="top" secondItem="zeB-IN-xCH" secondAttribute="bottom" constant="20" id="r52-va-3VW"/>
+                            <constraint firstItem="zeB-IN-xCH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vT0-Lr-R2e"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
